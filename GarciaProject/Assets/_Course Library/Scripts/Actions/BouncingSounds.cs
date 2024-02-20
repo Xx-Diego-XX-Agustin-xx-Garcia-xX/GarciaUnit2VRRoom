@@ -16,7 +16,6 @@ public class BouncingSounds : MonoBehaviour
     void OnCollisionEnter()
     {
         ballMagnitude = rigidBody.velocity.magnitude / 2;
-        Debug.Log(ballMagnitude);
         if (ballMagnitude > 1)
         {
             ballMagnitude = 1;
